@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex-r{
+       @apply flex flex-row
+    }
+    .flex-c{
+        @apply flex flex-col}
+    .flex-g{
+        @apply flex-grow}
+}
+
+@layer components {
+    .head{
+        @apply h-20 bg-shopify-cream font-shopify text-lg
+    }
+    .navbar{
+        @apply flex flex-row justify-between items-center mx-4 h-full
+    }
+    .link_list {
+        @apply flex flex-row space-x-8 justify-evenly items-center h-full
+    }
+    .img_one{
+        @apply object-cover object-top w-full h-full
+    }
+    .down_arrow{
+        @apply box-border w-3 object-cover inline-block
+    }
+    .trial_btn{
+        @apply bg-shopify-btn-green text-white text-lg px-4 py-3 text-center rounded-md shadow-2xl hover:bg-shopify-green hover:shadow-inner
+    }
+    .email_input{
+        @apply w-4/6 px-6 py-3 mr-2 rounded-md border-solid border-shopify-btn-green border-2
+    }
+}
+
+@layer components {
+    .h2_style{
+        @apply text-4xl
+    }
+    .h3_style{
+        @apply text-xl my-8 text-gray-600
+    }
+    .anchor_style{
+        @apply text-shopify-btn-green text-xl
+    }
+}
+
+@layer components {
+    .h2_style_sm{
+        @apply text-2xl
+    }
+    .h3_style_sm{
+        @apply text-lg my-8 text-gray-600
+    }
+    .anchor_style_sm{
+        @apply text-shopify-btn-green text-lg
+    }
+}
+
+/*Business Card*/
+@layer components {
+    .business_card{
+        @apply flex flex-col justify-start space-y-4
+    }
+    .business_p{
+        @apply text-gray-200
+    }
+}
